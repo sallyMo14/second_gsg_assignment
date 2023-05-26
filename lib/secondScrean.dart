@@ -5,7 +5,7 @@ class SecondScrean extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+   return MaterialApp(
       home: SafeArea(
         child: Scaffold(
           body: Padding(
@@ -36,17 +36,17 @@ class SecondScrean extends StatelessWidget {
                             color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(20)),
                         child: Icon(
-                          Icons.filter,
+                          Icons.tune,
                           color: Colors.grey,
                         ),
                       ),
                       Container(
                         alignment: Alignment.center,
-                        width: 20,
-                        height: 20,
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(510),
-                            color: Colors.blueGrey),
+                            borderRadius: BorderRadius.circular(110),
+                            color: Colors.indigo[700]),
                         child: Text(
                           "3",
                           style: TextStyle(color: Colors.white, fontSize: 12),
@@ -60,7 +60,7 @@ class SecondScrean extends StatelessWidget {
                     Text(
                       "74 results for ",
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 40,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -70,7 +70,7 @@ class SecondScrean extends StatelessWidget {
                     Text(
                       "'photographer'",
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 38,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -100,7 +100,7 @@ class SecondScrean extends StatelessWidget {
                       width: 350,
                       height: 250,
                       decoration: BoxDecoration(
-                          color: Colors.blueGrey,
+                          color: Colors.indigo[700],
                           borderRadius: BorderRadius.circular(40)),
                       child: Padding(
                         padding: const EdgeInsets.all(20.0),
@@ -121,17 +121,19 @@ class SecondScrean extends StatelessWidget {
                                     width: 35,
                                     height: 35,
                                     decoration: BoxDecoration(
-                                        color: Colors.grey[500],
+                                        color: Colors.white12,
                                         borderRadius:
                                             BorderRadius.circular(12)),
                                     child: Icon(
-                                      Icons.abc,
-                                      color: Colors.grey[200],
+                                      Icons.turned_in_not_outlined,
+                                      color: Colors.white,
                                     ))
                               ],
                             ),
                             Container(
+                              padding: EdgeInsets.symmetric(vertical: 8),
                               alignment: Alignment.center,
+                              // height: 35,
                               width: 90,
                               decoration: BoxDecoration(
                                   color: Colors.white,
@@ -145,7 +147,7 @@ class SecondScrean extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 10,
                             ),
                             Container(
                               child: Text(
@@ -164,7 +166,7 @@ class SecondScrean extends StatelessWidget {
                                   width: 130,
                                   height: 35,
                                   decoration: BoxDecoration(
-                                      color: Colors.grey[500],
+                                      color: Colors.white12,
                                       borderRadius: BorderRadius.circular(12)),
                                   child: Text(
                                     "Photography",
@@ -176,7 +178,7 @@ class SecondScrean extends StatelessWidget {
                                   width: 130,
                                   height: 35,
                                   decoration: BoxDecoration(
-                                      color: Colors.grey[500],
+                                      color: Colors.white12,
                                       borderRadius: BorderRadius.circular(12)),
                                   child: Text(
                                     "Photography",
@@ -204,7 +206,7 @@ class SecondScrean extends StatelessWidget {
                   height: 80,
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(28)),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -212,16 +214,19 @@ class SecondScrean extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Icon(
+                          size: 36,
                           Icons.person_2_outlined,
-                          color: Colors.white24,
+                          color: Colors.grey[400],
                         ),
                         Icon(
+                          size: 36,
                           Icons.search_outlined,
-                          color: Colors.blueGrey,
+                          color: Colors.indigo[700],
                         ),
                         Icon(
+                          size: 36,
                           Icons.settings_outlined,
-                          color: Colors.white24,
+                          color: Colors.grey[400],
                         ),
                       ],
                     ),
